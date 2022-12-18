@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+.calendarContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    font-size: 3em;
+    flex: 100%;
+    margin: auto;
+}
+
+.months {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.month {
+    flex: auto;
+    min-width: 25px;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    border: 3px solid black;
+    background: radial-gradient(black, #2d3e4a);
+    color: #a3c4da;
+    border-radius: 5%;
+    gap: 5px;
+}
+
+.monthTitle {
+    font-size: 1.5em;
+    color: gainsboro;
+}
+
+.daysOfWeek {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: gainsboro;
+    gap: 5px;
+}
+
+.daysContainer{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+    height: 215px;
+    gap: 10px;
+    text-align: center;
+}
+
+.day {
+    width: fit-content;
+}
+
+.holiday{
+    background-color: lightblue;
+    color: black;
+    border-radius: 45%;
+}
+
+.dayOtherMonth{
+    color: dimgrey;
+    font-size: 0.80em;
+}

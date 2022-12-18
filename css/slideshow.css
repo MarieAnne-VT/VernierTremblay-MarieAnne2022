@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+.fading {
+    animation: fading 8s infinite
+}
+@keyframes fading {
+    0% {opacity: 0}
+    20% {opacity: 1}
+    80% {opacity: 1}
+    100% {opacity: 0}
+}
+.slideshow {
+    border: 3px solid black;
+    background: radial-gradient(black, #2d3e4a);
+    border-radius: 5%;
+    margin: auto;
+}
+.slide {
+    width: 75%;
+    margin: auto;
+}

@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.menus {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    background-image: linear-gradient(160deg, black, #597081);
+    color: white;
+    height: 50px;
+    width: calc(min(100%, 1100px));
+}
+
+.icon {
+    font-size:28px !important;
+    cursor: pointer;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+}
+
+.menuText {
+    font-size: 1em;
+    cursor: pointer;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 35px auto;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu:hover,
+.menu:hover .icon {
+    color: #A9CEF4;
+    -webkit-text-fill-color: #A9CEF4;
+}
+
+.menu:active,
+.menu:active .icon {
+    color: #525351;
+    -webkit-text-fill-color: #525351;
+}
+
+.selected,
+.selected .icon {
+    color: #7EA0B7;
+    -webkit-text-fill-color: #7EA0B7;
+}
+
+.menuBuffer {
+    height: 50px;
+}
+
+@media screen and (min-width:875px) {
+    .menuText {
+        display: block;
+    }
+}
